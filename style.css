@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+:root {
+  --green: #214b3b;
+  --green-dark: #17382d;
+  --orange: #e58b45;
+  --cream: #fffaf2;
+  --text: #28332d;
+  --muted: #69736d;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--cream); line-height: 1.6; }
+.container { width: min(1120px, 90%); margin: 0 auto; }
+.site-header { position: sticky; top: 0; z-index: 10; background: rgba(255,250,242,.96); box-shadow: 0 2px 14px rgba(20,40,30,.08); }
+.navbar { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { color: var(--green); text-decoration: none; font-weight: 700; font-size: 1.05rem; }
+.brand-mark { display: inline-grid; place-items: center; width: 36px; height: 36px; margin-right: 7px; border-radius: 50%; background: #f6e5cf; }
+.nav-links { display: flex; align-items: center; gap: 30px; list-style: none; padding: 0; margin: 0; }
+.nav-links a { color: var(--text); text-decoration: none; font-weight: 600; font-size: .94rem; }
+.nav-links a:hover { color: var(--orange); }
+.menu-toggle { display: none; border: 0; background: transparent; font-size: 1.6rem; color: var(--green); cursor: pointer; }
+.hero { min-height: 520px; display: flex; align-items: center; color: var(--white); background: linear-gradient(90deg, rgba(19,48,37,.94), rgba(19,48,37,.62)), radial-gradient(circle at 78% 35%, #c8894c, #315b45 55%, #17382d); }
+.hero-content { padding-top: 80px; padding-bottom: 90px; }
+.eyebrow { color: var(--orange); font-size: .78rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 12px; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 7vw, 5.2rem); line-height: 1.05; margin: 0 0 20px; }
+.hero h1 span { color: #f3b879; }
+.hero-desc { max-width: 560px; color: #f1eee7; font-size: 1.05rem; margin-bottom: 30px; }
+.btn { display: inline-block; border: 0; border-radius: 7px; padding: 13px 23px; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+.btn-primary { background: var(--orange); color: #241b13; transition: background .25s, transform .25s; }
+.btn-primary:hover { background: #f2a45e; transform: translateY(-2px); }
+.section { padding-top: 82px; padding-bottom: 82px; }
+.section-heading { text-align: center; margin-bottom: 34px; }
+.section-heading h2, .register-info h2 { font-family: 'Playfair Display', serif; color: var(--green); font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.15; margin: 0 0 10px; }
+.section-heading > p:last-child { color: var(--muted); margin: 0; }
+.table-wrap { overflow-x: auto; background: var(--white); border-radius: 12px; box-shadow: 0 8px 28px rgba(30,55,40,.07); }
+table { width: 100%; min-width: 650px; border-collapse: collapse; text-align: left; }
+th { background: var(--green); color: var(--white); padding: 16px; }
+td { padding: 15px 16px; border-bottom: 1px solid #ece9e1; }
+tbody tr:last-child td { border-bottom: 0; }
+.table-note { text-align: center; color: var(--muted); font-size: .88rem; background: #fbf4e9; }
+.tenant-section { background: #f4eee3; }
+.tenant-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.tenant-card { overflow: hidden; background: var(--white); border-radius: 13px; box-shadow: 0 7px 22px rgba(30,55,40,.06); transition: transform .25s ease, box-shadow .25s ease; }
+.tenant-card:hover { transform: translateY(-7px); box-shadow: 0 14px 28px rgba(30,55,40,.13); }
+.food-icon { min-height: 145px; display: grid; place-items: center; font-size: 4rem; background: linear-gradient(135deg, #f8dfbd, #e8c79d); }
+.card-body { padding: 20px; }
+.card-body h3 { color: var(--green); margin: 0 0 7px; }
+.card-body p { color: var(--muted); font-size: .92rem; margin: 0 0 15px; }
+.tag { display: inline-block; border-radius: 30px; padding: 5px 11px; color: var(--green); background: #e8f0e9; font-size: .78rem; font-weight: 700; }
+.register-panel { display: grid; grid-template-columns: .9fr 1.1fr; gap: 55px; padding: 42px; border-radius: 16px; background: var(--white); box-shadow: 0 10px 32px rgba(30,55,40,.08); }
+.register-info p:not(.eyebrow) { color: var(--muted); }
+.contact-note { margin-top: 28px; padding-left: 15px; border-left: 3px solid var(--orange); }
+.register-form { display: grid; gap: 9px; }
+.register-form label { font-weight: 600; font-size: .9rem; margin-top: 5px; }
+.register-form label span { color: #c64c35; }
+.register-form input, .register-form select { width: 100%; padding: 12px 13px; border: 1px solid #d9ded8; border-radius: 7px; background: #fff; font: inherit; color: var(--text); }
+.register-form input:focus, .register-form select:focus { outline: 2px solid #e9b27e; border-color: var(--orange); }
+.submit-btn { margin-top: 12px; }
+.form-message { min-height: 22px; margin: 0; color: var(--green); font-size: .9rem; }
+.footer { padding: 27px 0; color: #e9eee9; background: var(--green-dark); }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.footer p { margin: 0; font-size: .88rem; }
+.fade-in { animation: fadeInUp .9s ease both; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .tenant-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .register-panel { gap: 28px; padding: 30px; }
+}
+@media (max-width: 599px) {
+  .navbar { min-height: 66px; }
+  .brand { font-size: .9rem; }
+  .menu-toggle { display: block; }
+  .nav-links { display: none; position: absolute; top: 66px; left: 0; right: 0; padding: 18px 5%; background: var(--cream); flex-direction: column; align-items: flex-start; gap: 14px; box-shadow: 0 8px 12px rgba(20,40,30,.08); }
+  .nav-links.open { display: flex; }
+  .hero { min-height: 460px; }
+  .hero-content { padding-top: 65px; padding-bottom: 70px; }
+  .section { padding-top: 58px; padding-bottom: 58px; }
+  .tenant-grid { grid-template-columns: 1fr; }
+  .register-panel { grid-template-columns: 1fr; gap: 24px; padding: 25px 20px; }
+  .footer-inner { align-items: flex-start; flex-direction: column; }
+}

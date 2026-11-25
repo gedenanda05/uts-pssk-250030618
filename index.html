@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Festival Kuliner Bali - acara kuliner, UMKM, dan budaya Bali.">
+  <title>Festival Kuliner Bali 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda"><span class="brand-mark">🍽</span> Festival Kuliner Bali</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#jadwal">Jadwal</a></li>
+        <li><a href="#tenant">Tenant</a></li>
+        <li><a href="#daftar">Daftar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-content container fade-in">
+        <p class="eyebrow">Rasa lokal, suasana istimewa</p>
+        <h1>Jelajahi Lezatnya<br><span>Kuliner Bali</span></h1>
+        <p class="hero-desc">Temukan cita rasa khas Bali, jajanan kekinian, dan produk UMKM lokal dalam satu festival yang penuh cerita.</p>
+        <a class="btn btn-primary" href="#jadwal">Lihat Jadwal</a>
+      </div>
+    </section>
+
+    <section class="section container" id="jadwal">
+      <div class="section-heading">
+        <p class="eyebrow">Catat tanggalnya</p>
+        <h2>Jadwal Acara</h2>
+        <p>Tiga hari penuh makanan, hiburan, dan pengalaman menarik.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Hari</th><th>Waktu</th><th>Kegiatan</th><th>Lokasi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td rowspan="2">Hari 1<br>Jumat</td><td>10.00–12.00</td><td>Pembukaan festival</td><td rowspan="6">Area Utama<br>Festival Kuliner Bali</td></tr>
+            <tr><td>13.00–16.00</td><td>Demo memasak makanan Bali</td></tr>
+            <tr><td rowspan="2">Hari 2<br>Sabtu</td><td>10.00–12.00</td><td>Jelajah tenant kuliner</td></tr>
+            <tr><td>15.00–18.00</td><td>Musik akustik</td></tr>
+            <tr><td rowspan="2">Hari 3<br>Minggu</td><td>10.00–13.00</td><td>Lomba kreasi makanan</td></tr>
+            <tr><td>16.00–18.00</td><td>Penutupan dan pengumuman pemenang</td></tr>
+            <tr><td colspan="4" class="table-note">* Jadwal dapat berubah mengikuti kondisi acara.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section tenant-section" id="tenant">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Pilihan rasa</p>
+          <h2>Jelajahi Tenant</h2>
+          <p>Beragam pilihan kuliner dari pelaku usaha lokal.</p>
+        </div>
+        <div class="tenant-grid">
+          <article class="tenant-card"><div class="food-icon">🍢</div><div class="card-body"><h3>Sate Lilit Bu Rai</h3><p>Sate lilit khas Bali dengan bumbu rempah.</p><span class="tag">Makanan khas</span></div></article>
+          <article class="tenant-card"><div class="food-icon">🍜</div><div class="card-body"><h3>Bakso Kuah Rempah</h3><p>Bakso hangat dengan kuah gurih pilihan.</p><span class="tag">Makanan berat</span></div></article>
+          <article class="tenant-card"><div class="food-icon">🥥</div><div class="card-body"><h3>Es Kelapa Segar</h3><p>Minuman kelapa muda yang menyegarkan.</p><span class="tag">Minuman</span></div></article>
+          <article class="tenant-card"><div class="food-icon">🍰</div><div class="card-body"><h3>Jaje Bali Manis</h3><p>Aneka jajanan tradisional khas Bali.</p><span class="tag">Jajanan</span></div></article>
+          <article class="tenant-card"><div class="food-icon">☕</div><div class="card-body"><h3>Kopi Kintamani</h3><p>Kopi lokal dengan aroma dan karakter khas.</p><span class="tag">Kopi lokal</span></div></article>
+          <article class="tenant-card"><div class="food-icon">🍔</div><div class="card-body"><h3>Burger Nusantara</h3><p>Menu burger dengan sentuhan rasa lokal.</p><span class="tag">Modern</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="daftar">
+      <div class="register-panel">
+        <div class="register-info">
+          <p class="eyebrow">Bergabung bersama kami</p>
+          <h2>Daftarkan Usaha Kamu</h2>
+          <p>Punya produk kuliner menarik? Isi formulir berikut untuk mendaftar sebagai tenant Festival Kuliner Bali.</p>
+          <p class="contact-note">Kesempatan untuk memperkenalkan produk kepada lebih banyak pengunjung.</p>
+        </div>
+        <form id="tenantForm" class="register-form">
+          <label for="businessName">Nama Usaha <span>*</span></label>
+          <input id="businessName" name="businessName" type="text" placeholder="Contoh: Kopi Bali" required>
+
+          <label for="email">Email <span>*</span></label>
+          <input id="email" name="email" type="email" placeholder="nama@email.com" required>
+
+          <label for="phone">Nomor HP <span>*</span></label>
+          <input id="phone" name="phone" type="tel" placeholder="081234567890" pattern="[0-9]{10,13}" title="Masukkan 10 sampai 13 digit angka" required>
+
+          <label for="category">Kategori Usaha <span>*</span></label>
+          <select id="category" name="category" required>
+            <option value="">Pilih kategori</option>
+            <option>Makanan berat</option><option>Makanan ringan</option><option>Minuman</option><option>Kopi</option><option>Lainnya</option>
+          </select>
+          <button class="btn btn-primary submit-btn" type="submit">Kirim Pendaftaran</button>
+          <p id="formMessage" class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><strong>Festival Kuliner Bali 2026</strong><br>Merayakan rasa dan karya lokal.</p>
+      <p>© 2026 Festival Kuliner Bali</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
